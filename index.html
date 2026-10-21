@@ -1,0 +1,559 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>McLeod Drilling | Exploration drilling, Port Augusta SA</title>
+<meta name="description" content="Small-footprint aircore, slimline RC, RAB and auger drilling from our own 6-wheel-drive LandCruiser rigs. 35 years of drilling. Based in Port Augusta, South Australia.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,500;0,600;0,700;0,800;0,900;1,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" as="image" href="assets/hero.jpg">
+<style>
+:root{
+  --red:#F4502F; --red-deep:#D63E1F; --ink:#1B1513; --ink-2:#2A1D1A; --ink-3:#3A2A25;
+  --sand:#F6F1EA; --sand-2:#EDE3D6; --line:#E0D4C4; --muted:#6C5F57; --white:#FFFFFF;
+  --radius:14px; --wrap:1180px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--ink);background:var(--sand);line-height:1.6;font-size:17px}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:Archivo,Inter,sans-serif;line-height:1.08;letter-spacing:-.015em}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+.eyebrow{font-family:Archivo,sans-serif;font-weight:700;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--red)}
+.btn{display:inline-flex;align-items:center;gap:10px;font-family:Archivo,sans-serif;font-weight:700;font-size:16px;padding:15px 24px;border-radius:999px;text-decoration:none;transition:transform .15s ease,background .15s ease;cursor:pointer;border:0}
+.btn:hover{transform:translateY(-1px)}
+.btn-red{background:var(--red);color:#fff;box-shadow:0 8px 24px -10px rgba(244,80,47,.7)}
+.btn-red:hover{background:var(--red-deep)}
+.btn-ghost{background:rgba(255,255,255,.08);color:#fff;border:1.5px solid rgba(255,255,255,.45)}
+.btn-ghost:hover{background:rgba(255,255,255,.16)}
+.btn svg{width:18px;height:18px;flex:none}
+
+/* header */
+.hdr{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;height:78px;gap:20px}
+.logo{display:block;width:112px;flex:none}
+.logo svg{width:100%;height:auto;display:block}
+.nav{display:flex;align-items:center;gap:30px}
+.nav a{text-decoration:none;font-weight:500;font-size:15px;color:var(--ink-3)}
+.nav a:hover{color:var(--red)}
+.nav a.btn{color:#fff;padding:12px 20px;font-size:15px}
+
+/* hero */
+.hero{position:relative;color:#fff;background:#2a1a12 url(assets/hero.jpg) center 70%/cover no-repeat;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(20,12,9,.93) 0%,rgba(20,12,9,.82) 42%,rgba(20,12,9,.45) 75%,rgba(20,12,9,.35) 100%)}
+.hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1.08fr .92fr;gap:56px;align-items:center;min-height:660px;padding-top:80px;padding-bottom:96px}
+.hero h1{font-size:clamp(40px,5.4vw,68px);font-weight:900;margin:18px 0 22px}
+.hero h1 em{font-style:italic;color:var(--red)}
+.hero p.lead{font-size:clamp(17px,1.5vw,20px);max-width:560px;color:rgba(255,255,255,.86)}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:14px;margin-top:32px}
+.hero .eyebrow{color:#FFB39F}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:36px}
+.chip{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:500;padding:8px 14px;border-radius:999px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2)}
+.chip i{width:7px;height:7px;border-radius:50%;background:var(--red);display:block}
+.hero-photo{position:relative}
+.hero-photo img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:20px;box-shadow:0 40px 80px -30px rgba(0,0,0,.7);border:4px solid rgba(255,255,255,.92)}
+.hero-photo .tag{position:absolute;left:-18px;bottom:28px;background:#fff;color:var(--ink);border-radius:14px;padding:14px 18px;box-shadow:0 20px 40px -18px rgba(0,0,0,.55);display:flex;gap:12px;align-items:center}
+.hero-photo .tag b{font-family:Archivo,sans-serif;font-weight:900;font-size:26px;color:var(--red);line-height:1}
+.hero-photo .tag span{font-size:13px;line-height:1.3;color:var(--ink-3);font-weight:500}
+
+/* strata divider */
+.strata{height:22px;background:linear-gradient(180deg,#B9542F 0 18%,#8E3B22 18% 38%,#C9833F 38% 56%,#6E2E1C 56% 74%,#D7A36A 74% 100%)}
+
+/* stats */
+.stats{background:var(--ink);color:#fff}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.stat{padding:38px 26px;border-left:1px solid rgba(255,255,255,.08)}
+.stat:first-child{border-left:0}
+.stat b{display:block;font-family:Archivo,sans-serif;font-weight:900;font-size:40px;line-height:1;letter-spacing:-.02em}
+.stat b em{font-style:normal;color:var(--red)}
+.stat span{display:block;margin-top:10px;color:rgba(255,255,255,.66);font-size:15px}
+
+/* sections */
+section.pad{padding:104px 0}
+.sec-head{max-width:720px;margin-bottom:52px}
+.sec-head h2{font-size:clamp(32px,4vw,50px);font-weight:800;margin-top:14px}
+.sec-head p{margin-top:18px;color:var(--muted);font-size:18px}
+
+/* about split */
+.split{display:grid;grid-template-columns:1.05fr .95fr;gap:70px;align-items:center}
+.split h2{font-size:clamp(32px,4vw,50px);font-weight:800;margin:14px 0 22px}
+.split p{color:var(--ink-3);margin-bottom:16px}
+.quote{position:relative;background:var(--white);border:1px solid var(--line);border-radius:22px;padding:42px 38px 36px;box-shadow:0 30px 60px -40px rgba(60,30,15,.35)}
+.quote::before{content:"";position:absolute;left:0;top:30px;bottom:30px;width:5px;border-radius:0 4px 4px 0;background:var(--red)}
+.quote blockquote{font-family:Archivo,sans-serif;font-weight:700;font-size:25px;line-height:1.28;letter-spacing:-.01em}
+.quote .attr{margin-top:18px;font-size:15px;color:var(--muted)}
+.quote .ticks{margin-top:26px;display:grid;gap:12px;border-top:1px solid var(--line);padding-top:24px}
+.tick{display:flex;gap:12px;align-items:flex-start;font-size:16px}
+.tick svg{width:22px;height:22px;flex:none;margin-top:1px}
+
+/* services */
+.svc-sec{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.svc{background:var(--sand);border:1px solid var(--line);border-radius:var(--radius);padding:30px 28px 28px;transition:transform .2s ease,box-shadow .2s ease}
+.svc:hover{transform:translateY(-3px);box-shadow:0 24px 50px -30px rgba(60,30,15,.45)}
+.svc .ic{width:52px;height:52px;border-radius:12px;background:#FDE9E3;display:grid;place-items:center;margin-bottom:20px}
+.svc .ic svg{width:28px;height:28px}
+.svc h3{font-size:21px;font-weight:800;margin-bottom:10px}
+.svc p{color:var(--muted);font-size:16px}
+.svc .hl{display:inline-block;margin-bottom:14px;font-family:Archivo,sans-serif;font-weight:700;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#fff;background:var(--red);padding:5px 10px;border-radius:6px}
+.svc.cta{background:var(--ink);border-color:var(--ink);color:#fff;display:flex;flex-direction:column;justify-content:space-between}
+.svc.cta p{color:rgba(255,255,255,.72)}
+.svc.cta .btn{margin-top:22px;align-self:flex-start}
+
+/* rig feature */
+.rig{position:relative;color:#fff;overflow:hidden;background:url(assets/topo.svg) center/cover no-repeat,radial-gradient(ellipse at 85% 15%,rgba(244,80,47,.22),rgba(244,80,47,0) 55%),linear-gradient(160deg,#2A1D1A,#1B1513)}
+.rig .split{grid-template-columns:1fr 1fr}
+.rig .split p{color:rgba(255,255,255,.78)}
+.rig .eyebrow{color:#FFB39F}
+.rig-photo img{width:100%;aspect-ratio:960/664;object-fit:cover;border-radius:20px;box-shadow:0 40px 80px -30px rgba(0,0,0,.7)}
+.rig-points{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:30px}
+.rp{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius);padding:20px 20px}
+.rp .n{font-family:Archivo,sans-serif;font-weight:900;font-size:14px;color:var(--red);letter-spacing:.08em}
+.rp h3{font-size:18px;font-weight:800;margin:8px 0 6px}
+.rig .split .rp p{font-size:15px;color:rgba(255,255,255,.7);margin:0}
+
+/* gallery */
+.gal{display:grid;grid-template-columns:1.35fr 1fr .75fr;gap:16px}
+.gal figure{position:relative;overflow:hidden;border-radius:var(--radius);background:var(--sand-2)}
+.gal img{width:100%;height:340px;object-fit:cover;transition:transform .5s ease}
+.gal figure:hover img{transform:scale(1.04)}
+
+/* who we work with */
+.who-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.who{position:relative;border-radius:var(--radius);padding:30px 26px;background:var(--white);border:1px solid var(--line);overflow:hidden}
+.who::after{content:"";position:absolute;right:-30px;top:-30px;width:120px;height:120px;border-radius:50%;background:radial-gradient(circle,rgba(244,80,47,.14),rgba(244,80,47,0) 70%)}
+.who h3{font-size:20px;font-weight:800;margin:16px 0 10px}
+.who p{color:var(--muted);font-size:15.5px}
+.who .ic{width:46px;height:46px}
+
+/* area */
+.area{position:relative;background:#3b2418 url(assets/hero.jpg) center 85%/cover;color:#fff}
+.area::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(25,15,10,.72),rgba(25,15,10,.88))}
+.area .wrap{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center;padding-top:100px;padding-bottom:100px}
+.area h2{font-size:clamp(32px,4vw,50px);font-weight:800;margin:14px 0 20px}
+.area p{color:rgba(255,255,255,.84);margin-bottom:14px}
+.area .eyebrow{color:#FFB39F}
+.states{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.states span{font-family:Archivo,sans-serif;font-weight:700;font-size:14px;padding:8px 14px;border-radius:8px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22)}
+.sa-map{margin:0 auto;width:100%;max-width:400px}
+.sa-map svg{width:100%;height:auto;display:block;filter:drop-shadow(0 20px 40px rgba(0,0,0,.35))}
+.legend{display:flex;gap:18px;margin-top:14px;font-size:13px;color:rgba(255,255,255,.7);justify-content:center}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px;vertical-align:-1px}
+
+/* contact */
+.contact{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}
+.contact h2{font-size:clamp(32px,4vw,50px);font-weight:800;margin:14px 0 20px}
+.contact p{color:var(--muted)}
+.c-list{margin-top:30px;display:grid;gap:14px}
+.c-item{display:flex;gap:16px;align-items:center;background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px;text-decoration:none;min-width:0}
+.c-item .ic{width:46px;height:46px;border-radius:12px;background:#FDE9E3;display:grid;place-items:center;flex:none;color:var(--red)}
+.c-item .ic svg{width:22px;height:22px}
+.c-item small{display:block;color:var(--muted);font-size:13px}
+.c-item strong{font-family:Archivo,sans-serif;font-size:18px;font-weight:700;overflow-wrap:anywhere}
+form.card{background:var(--white);border:1px solid var(--line);border-radius:22px;padding:36px;box-shadow:0 30px 60px -40px rgba(60,30,15,.35)}
+form.card h3{font-size:24px;font-weight:800;margin-bottom:6px}
+form.card .sub{color:var(--muted);font-size:15px;margin-bottom:24px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+label{display:block;font-size:14px;font-weight:600;margin-bottom:16px;color:var(--ink-3)}
+input,select,textarea{display:block;width:100%;margin-top:7px;font:inherit;font-size:16px;color:var(--ink);background:#FBF8F4;border:1.5px solid var(--line);border-radius:10px;padding:13px 14px;outline:none;transition:border-color .15s ease,box-shadow .15s ease}
+select{background-color:#FBF8F4}
+select option{background:#FFFFFF;color:var(--ink)}
+input:focus,select:focus,textarea:focus{border-color:var(--red);box-shadow:0 0 0 4px rgba(244,80,47,.14)}
+textarea{min-height:110px;resize:vertical}
+form.card .btn{width:100%;justify-content:center;margin-top:6px}
+.form-note{display:none;margin-top:16px;padding:14px 16px;border-radius:10px;background:#FFF3EE;border:1px solid #F7C5B6;font-size:15px;color:var(--ink-3)}
+
+/* preview note */
+.pv{background:var(--sand-2);border-top:1px solid var(--line)}
+.pv .wrap{padding-top:64px;padding-bottom:64px}
+.pv-card{display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:start;background:var(--white);border:1px solid var(--line);border-radius:22px;padding:34px 36px}
+.pv-card .badge{font-family:Archivo,sans-serif;font-weight:800;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#fff;background:var(--ink);padding:9px 14px;border-radius:8px;white-space:nowrap;justify-self:start}
+.pv-card h3{font-size:22px;font-weight:800;margin-bottom:10px}
+.pv-card p{color:var(--muted);margin-bottom:14px}
+.pv-card ul{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px 26px}
+.pv-card li{display:flex;gap:10px;align-items:flex-start;font-size:16px}
+.pv-card li svg{width:20px;height:20px;flex:none;margin-top:3px}
+
+/* footer */
+.ftr{background:var(--white);border-top:1px solid var(--line)}
+.ftr .wrap{display:flex;justify-content:space-between;align-items:center;gap:24px;padding-top:34px;padding-bottom:34px;flex-wrap:wrap}
+.ftr .logo{width:92px}
+.ftr p{font-size:14px;color:var(--muted)}
+.ribbon{position:fixed;left:14px;bottom:14px;z-index:60;font-size:12px;font-weight:600;background:rgba(27,21,19,.88);color:#fff;text-decoration:none;padding:8px 12px;border-radius:999px}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+
+/* responsive */
+@media (max-width:1020px){
+  .nav a:not(.btn){display:none}
+  .hero .wrap,.split,.rig .split,.contact,.area .wrap{grid-template-columns:1fr;gap:44px}
+  .hero-photo{max-width:620px}
+  .svc-grid,.who-grid{grid-template-columns:1fr 1fr}
+  .stats .wrap{grid-template-columns:1fr 1fr}
+  .stat:nth-child(3){border-left:0}
+  .stat:nth-child(n+3){border-top:1px solid rgba(255,255,255,.08)}
+  .gal{grid-template-columns:1fr 1fr}
+  .gal figure:last-child{display:none}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  .wrap{padding:0 16px}
+  .hdr .wrap{height:66px}
+  .logo{width:92px}
+  .nav a.btn span{display:none}
+  .nav a.btn{padding:11px 14px}
+  .hero .wrap{min-height:0;padding-top:56px;padding-bottom:64px}
+  .hero::before{background:linear-gradient(180deg,rgba(20,12,9,.78),rgba(20,12,9,.9))}
+  .hero-photo .tag{left:12px;bottom:12px;padding:10px 14px}
+  .hero-photo .tag b{font-size:22px}
+  section.pad{padding:72px 0}
+  .svc-grid,.who-grid,.rig-points,.row,.pv-card ul,.gal{grid-template-columns:1fr}
+  .gal img{height:240px}
+  .gal figure:last-child{display:block}
+  .gal figure:last-child img{object-position:center 30%}
+  .stat{padding:28px 16px}
+  .stat b{font-size:32px}
+  .quote{padding:34px 24px 28px}
+  .quote blockquote{font-size:21px}
+  form.card{padding:26px 18px}
+  .pv-card{grid-template-columns:1fr;padding:28px 20px}
+  .area .wrap{padding-top:72px;padding-bottom:72px}
+  .c-item strong{font-size:16px}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="mcl-logo" viewBox="10 16 190 128">
+      <path fill="#F4502F" d="M164.7,128.0 164.0,129.0 165.8,133.0 171.2,140.3 175.2,134.3 177.3,128.6 175.4,127.6Z M101.6,96.6 112.7,114.7 117.0,119.2 143.7,112.4 149.4,113.7 158.8,121.2 167.3,122.3 181.3,121.4 187.9,111.3 194.4,97.0 185.1,95.6 104.3,95.6Z M116.2,61.0 100.0,29.4 93.2,19.0 84.8,39.9 80.4,40.5 77.3,39.4 75.4,28.7 74.0,26.5 71.6,25.6 58.4,26.1 25.8,56.6 21.1,63.1 114.1,63.8 115.9,63.0Z"/>
+      <text x="104" y="86.3" text-anchor="middle" font-family="Archivo, Arial, sans-serif" font-style="italic" font-weight="800" font-size="19.5" fill="#2A1D1A" textLength="180" lengthAdjust="spacingAndGlyphs">McLEOD DRILLING</text>
+    </symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.8 2z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z M22 6l-10 7L2 6"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z M12 12.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="#FDE9E3"/><path fill="none" stroke="#F4502F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M7 12.5l3.2 3.2L17 9"/></symbol>
+    <symbol id="i-rig" viewBox="0 0 28 28"><path fill="none" stroke="#F4502F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9 3v18M6 3h6M9 21l-3 4M9 21l3 4M14 13h9v8h-9zM14 21h9M18 21v4"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 28 28"><path fill="none" stroke="#F4502F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M3 8h22M3 14h22M3 20h22M14 2v24"/><circle cx="14" cy="24" r="2" fill="#F4502F"/></symbol>
+    <symbol id="i-air" viewBox="0 0 28 28"><path fill="none" stroke="#F4502F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M14 26V6M10 10l4-4 4 4M5 14c2-2 4-2 6 0s4 2 6 0 4-2 6 0M5 19c2-2 4-2 6 0s4 2 6 0 4-2 6 0"/></symbol>
+    <symbol id="i-auger" viewBox="0 0 28 28"><path fill="none" stroke="#F4502F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M14 2v24M9 7l10 3M9 12l10 3M9 17l10 3M12 26h4"/></symbol>
+    <symbol id="i-camp" viewBox="0 0 28 28"><path fill="none" stroke="#F4502F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M2 22h24M5 22V12h14v10M19 15h4l2 3v4M9 16h6M8 25a2 2 0 1 0 0-.1M21 25a2 2 0 1 0 0-.1"/></symbol>
+  </defs>
+</svg>
+
+<header class="hdr">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="McLeod Drilling home"><svg viewBox="0 0 190 128" role="img" aria-label="McLeod Drilling"><use href="#mcl-logo"/></svg></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#rigs">Our rigs</a>
+      <a href="#area">Where we work</a>
+      <a href="#contact">Contact</a>
+      <a class="btn btn-red" href="tel:0408365005" aria-label="Call 0408 365 005"><svg><use href="#i-phone"/></svg><span>0408 365 005</span></a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">Exploration drilling &middot; Port Augusta, South Australia</div>
+      <h1>Exploration drilling that's <em>light on the land.</em></h1>
+      <p class="lead">Small-footprint aircore, slimline RC, RAB and auger drilling from our own 6-wheel-drive LandCruiser rigs. South Australian owned and operated, with 35 years of drilling behind every hole.</p>
+      <div class="ctas">
+        <a class="btn btn-red" href="tel:0408365005"><svg><use href="#i-phone"/></svg>Call 0408 365 005</a>
+        <a class="btn btn-ghost" href="#contact">Send an enquiry</a>
+      </div>
+      <div class="chips">
+        <span class="chip"><i></i>35 years drilling</span>
+        <span class="chip"><i></i>No tracks, small footprint</span>
+        <span class="chip"><i></i>Remote camps available</span>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="assets/rig-wasdrill.jpg" width="1024" height="768" alt="A McLeod Drilling rig mounted on a 6-wheel-drive LandCruiser, on red dirt and saltbush">
+      <div class="tag"><b>6&times;6</b><span>LandCruiser-mounted<br>drill rig</span></div>
+    </div>
+  </div>
+</section>
+<div class="strata" aria-hidden="true"></div>
+
+<section class="stats" aria-label="At a glance">
+  <div class="wrap">
+    <div class="stat"><b>35</b><span>Years of drilling</span></div>
+    <div class="stat"><b>6<em>&times;</em>6</b><span>LandCruiser-mounted rigs</span></div>
+    <div class="stat"><b>4</b><span>Drilling methods: aircore, RC, RAB and auger</span></div>
+    <div class="stat"><b>4</b><span>States covered: SA, WA, NT and NSW</span></div>
+  </div>
+</section>
+
+<section class="pad" id="about">
+  <div class="wrap split">
+    <div class="rv">
+      <div class="eyebrow">About McLeod Drilling</div>
+      <h2>35 years. Built on word of mouth.</h2>
+      <p>McLeod Drilling started out running big drilling rigs. Over the years we found a niche: our own drill rigs, built on 6-wheel-drive LandCruisers.</p>
+      <p>They do the job without tracks and with a small footprint on the ground. That is why government agencies, traditional owners and landowners are happy to see us arrive, and why our work comes from people recommending us.</p>
+      <p>Home base is now a big commercial shed in Port Augusta.</p>
+    </div>
+    <div class="quote rv">
+      <blockquote>&ldquo;We don't need tracks, and it's environmentally friendly. The governments love us, the traditional owners love us, and the landowners love us.&rdquo;</blockquote>
+      <div class="attr">McLeod Drilling</div>
+      <div class="ticks">
+        <div class="tick"><svg><use href="#i-check"/></svg>Rigs we built ourselves, on 6-wheel-drive LandCruisers</div>
+        <div class="tick"><svg><use href="#i-check"/></svg>No tracks, so far less disturbance to the ground</div>
+        <div class="tick"><svg><use href="#i-check"/></svg>The only setup like it in South Australia</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pad svc-sec" id="services">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="eyebrow">What we do</div>
+      <h2>Exploration drilling, with a small footprint.</h2>
+      <p>Four drilling methods, all run from light, low-impact rigs, plus the support to keep a crew working out bush.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc rv">
+        <span class="hl">Our speciality</span>
+        <div class="ic"><svg><use href="#i-air"/></svg></div>
+        <h3>Aircore drilling</h3>
+        <p>Small-footprint aircore drilling for mineral exploration. Air carries the rock chips up the inside of the rods, so each sample comes up on its own.</p>
+      </div>
+      <div class="svc rv">
+        <div class="ic"><svg><use href="#i-layers"/></svg></div>
+        <h3>Slimline RC drilling</h3>
+        <p>Reverse circulation (RC) drilling on a slimline, low-impact rig, for sampling deeper ground without bringing in heavy gear.</p>
+      </div>
+      <div class="svc rv">
+        <div class="ic"><svg><use href="#i-rig"/></svg></div>
+        <h3>RAB drilling</h3>
+        <p>Rotary air blast (RAB) drilling: a quick way to test shallow ground across a wide area.</p>
+      </div>
+      <div class="svc rv">
+        <div class="ic"><svg><use href="#i-auger"/></svg></div>
+        <h3>Auger drilling and sampling</h3>
+        <p>Auger drilling for soil and calcrete sampling, from a LandCruiser-mounted auger rig.</p>
+      </div>
+      <div class="svc rv">
+        <div class="ic"><svg><use href="#i-camp"/></svg></div>
+        <h3>Remote support and camps</h3>
+        <p>Support vehicles and remote caravan camps available, so the crew is set up wherever the job is.</p>
+      </div>
+      <div class="svc cta rv">
+        <div>
+          <h3>Not sure which method fits?</h3>
+          <p>Tell us where the ground is and what you are looking for, and we will talk you through it.</p>
+        </div>
+        <a class="btn btn-red" href="tel:0408365005"><svg><use href="#i-phone"/></svg>0408 365 005</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="rig pad" id="rigs">
+  <div class="wrap split">
+    <div class="rv">
+      <div class="eyebrow">Our rigs</div>
+      <h2>Built on LandCruisers. No tracks.</h2>
+      <p>Most drilling rigs sit on tracks or heavy trucks. Ours are built on 6-wheel-drive LandCruisers, so we get to the site and do the work with a much lighter footprint.</p>
+      <p>Less damage to the ground means a lot less worry for whoever looks after that land.</p>
+      <div class="rig-points">
+        <div class="rp"><div class="n">01</div><h3>6-wheel drive</h3><p>Rigs mounted on 6-wheel-drive LandCruisers.</p></div>
+        <div class="rp"><div class="n">02</div><h3>No tracks</h3><p>No tracked machine chewing up the ground.</p></div>
+        <div class="rp"><div class="n">03</div><h3>Low impact</h3><p>Small footprint, environmentally friendly.</p></div>
+        <div class="rp"><div class="n">04</div><h3>Built by us</h3><p>Nobody else in South Australia drills this way.</p></div>
+      </div>
+    </div>
+    <div class="rig-photo rv">
+      <img src="assets/rig-6x6.jpg" width="960" height="664" loading="lazy" alt="A red McLeod Drilling rig on a 6-wheel-drive LandCruiser, with a second LandCruiser behind it">
+    </div>
+  </div>
+</section>
+<div class="strata" aria-hidden="true"></div>
+
+<section class="pad">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="eyebrow">On the job</div>
+      <h2>Paddocks, mallee and roadsides.</h2>
+    </div>
+    <div class="gal rv">
+      <figure><img src="assets/job-paddock.jpg" width="1024" height="768" loading="lazy" alt="A drill rig at work in a stubble paddock, with sample bags laid out in rows"></figure>
+      <figure><img src="assets/job-mallee.jpg" width="590" height="443" loading="lazy" alt="The crew drilling with a yellow rig in mallee scrub"></figure>
+      <figure><img src="assets/job-roadside.jpg" width="443" height="590" loading="lazy" alt="A rig drilling beside a country road lined with gum trees"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="pad" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="eyebrow">Who we work with</div>
+      <h2>Trusted where the land matters.</h2>
+      <p>Some ground needs more care than others. These are the people we drill for, and alongside.</p>
+    </div>
+    <div class="who-grid">
+      <div class="who rv">
+        <svg class="ic" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#FDE9E3"/><path fill="none" stroke="#F4502F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M24 10v22M19 32h10M17 36h14M14 18l10-6 10 6"/></svg>
+        <h3>Exploration companies</h3>
+        <p>Aircore, RC, RAB and auger programs for mineral exploration.</p>
+      </div>
+      <div class="who rv">
+        <svg class="ic" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#FDE9E3"/><path fill="none" stroke="#F4502F" stroke-width="2.2" stroke-linejoin="round" d="M12 20h24M14 20v12M20 20v12M28 20v12M34 20v12M11 35h26M24 11l13 7H11z"/></svg>
+        <h3>Government agencies</h3>
+        <p>Projects where the ground has to be looked after, done with a lighter rig and no tracks.</p>
+      </div>
+      <div class="who rv">
+        <svg class="ic" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#FDE9E3"/><circle cx="24" cy="24" r="4" fill="#F4502F"/><circle cx="24" cy="24" r="9" fill="none" stroke="#F4502F" stroke-width="2.2"/><circle cx="24" cy="24" r="14" fill="none" stroke="#F4502F" stroke-width="2.2" stroke-dasharray="3 4"/></svg>
+        <h3>Traditional owners</h3>
+        <p>Drilling on country with rigs that tread lightly instead of tearing up the ground.</p>
+      </div>
+      <div class="who rv">
+        <svg class="ic" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#FDE9E3"/><path fill="none" stroke="#F4502F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M10 34l9-13 6 8 4-5 9 10zM10 34h28"/><circle cx="32" cy="15" r="3" fill="none" stroke="#F4502F" stroke-width="2.2"/></svg>
+        <h3>Landowners</h3>
+        <p>Drilling on farmland with no tracked machine going through the paddock.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="area" id="area">
+  <div class="wrap">
+    <div class="rv">
+      <div class="eyebrow">Where we work</div>
+      <h2>Based in Port Augusta. Working across the outback.</h2>
+      <p>From our base in Port Augusta, our rigs have drilled near Tarcoola, on the Eyre Peninsula, south of Coober Pedy and over the border in north-west New South Wales.</p>
+      <div class="states"><span>South Australia</span><span>Western Australia</span><span>Northern Territory</span><span>New South Wales</span></div>
+    </div>
+    <div class="rv">
+      <div class="sa-map" aria-hidden="true"><svg viewBox="0 0 302 359" role="img"><path d="M10.0,169.3 38.2,166.2 59.4,163.4 75.9,165.4 90.9,177.7 104.1,176.6 118.2,180.8 126.0,188.6 132.5,200.4 127.6,203.8 134.7,207.4 143.4,212.4 148.5,224.2 155.8,235.4 162.2,251.4 166.4,260.6 173.9,261.4 171.6,254.2 177.0,244.4 188.0,231.8 196.3,225.0 204.0,217.2 211.8,206.8 215.1,197.6 216.3,191.7 218.2,199.0 221.9,211.0 218.2,220.0 213.0,232.0 208.7,242.4 202.9,250.8 198.2,259.2 195.3,270.4 205.2,267.6 215.8,264.2 218.2,255.0 219.8,245.8 225.0,239.0 229.9,248.0 233.4,256.4 233.4,263.4 231.1,270.4 224.0,279.4 231.1,278.8 236.3,277.4 242.4,277.7 249.9,283.0 258.1,295.6 265.2,313.2 263.1,322.5 269.0,331.4 277.0,341.8 285.2,347.4 291.5,347.7 292.2,10.0 10.0,10.0Z M187.1,283.0 195.8,281.0 209.9,278.8 224.0,282.2 217.0,285.8 212.3,290.0 198.2,291.4 188.8,290.0Z" fill="rgba(246,241,234,.10)" stroke="rgba(255,255,255,.7)" stroke-width="1.6" stroke-linejoin="round"/><text x="22" y="40" fill="rgba(255,255,255,.45)" font-family="Archivo, sans-serif" font-weight="700" font-size="12" letter-spacing="3">SOUTH AUSTRALIA</text><circle cx="145.2" cy="94.3" r="5" fill="#fff"/><text x="155.2" y="99.3" text-anchor="start" fill="rgba(255,255,255,.85)" font-family="Inter, sans-serif" font-weight="600" font-size="13">Coober Pedy</text><circle cx="141.0" cy="141.9" r="5" fill="#fff"/><text x="151.0" y="146.9" text-anchor="start" fill="rgba(255,255,255,.85)" font-family="Inter, sans-serif" font-weight="600" font-size="13">Tarcoola</text><circle cx="147.4" cy="198.2" r="5" fill="#fff"/><text x="137.4" y="203.2" text-anchor="end" fill="rgba(255,255,255,.85)" font-family="Inter, sans-serif" font-weight="600" font-size="13">Eyre Peninsula</text><circle cx="216.3" cy="191.7" r="22" fill="rgba(244,80,47,.25)"><animate attributeName="r" values="9;26;9" dur="3s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;.15;1" dur="3s" repeatCount="indefinite"/></circle><circle cx="216.3" cy="191.7" r="7" fill="#F4502F" stroke="#fff" stroke-width="2.5"/><text x="204.3" y="177.7" text-anchor="end" fill="#fff" font-family="Archivo, sans-serif" font-weight="800" font-size="16">Port Augusta</text></svg></div>
+      <div class="legend"><span><i style="background:#F4502F"></i>Home base</span><span><i style="background:#fff"></i>Past jobs</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="pad" id="contact">
+  <div class="wrap contact">
+    <div class="rv">
+      <div class="eyebrow">Get in touch</div>
+      <h2>Got a drilling program coming up?</h2>
+      <p>Give us a call or send through the details. Tell us where the ground is and what you need, and we will come back to you.</p>
+      <div class="c-list">
+        <a class="c-item" href="tel:0408365005"><span class="ic"><svg><use href="#i-phone"/></svg></span><span><small>Call</small><strong>0408 365 005</strong></span></a>
+        <a class="c-item" href="mailto:jim@mcleoddrilling.com.au"><span class="ic"><svg><use href="#i-mail"/></svg></span><span><small>Email</small><strong>jim@mcleoddrilling.com.au</strong></span></a>
+        <div class="c-item"><span class="ic"><svg><use href="#i-pin"/></svg></span><span><small>Based in</small><strong>Port Augusta, South Australia</strong></span></div>
+      </div>
+    </div>
+    <form class="card rv" id="enq" novalidate>
+      <h3>Send an enquiry</h3>
+      <p class="sub">A few details and we will be in touch.</p>
+      <div class="row">
+        <label>Your name<input name="name" autocomplete="name"></label>
+        <label>Company<input name="company" autocomplete="organization"></label>
+      </div>
+      <div class="row">
+        <label>Phone<input name="phone" type="tel" autocomplete="tel"></label>
+        <label>Email<input name="email" type="email" autocomplete="email"></label>
+      </div>
+      <div class="row">
+        <label>Where is the job?<input name="where" placeholder="Area or tenement"></label>
+        <label>What do you need?
+          <select name="type">
+            <option>Aircore drilling</option>
+            <option>Slimline RC drilling</option>
+            <option>RAB drilling</option>
+            <option>Auger drilling or sampling</option>
+            <option>Not sure yet</option>
+          </select>
+        </label>
+      </div>
+      <label>Tell us about the program<textarea name="msg" placeholder="Number of holes, rough depths, access, timing"></textarea></label>
+      <button class="btn btn-red" type="submit">Send enquiry</button>
+      <div class="form-note" id="enq-note" role="status">This is a preview, so the form does not send yet. On the finished website, every enquiry lands straight in your inbox.</div>
+    </form>
+  </div>
+</section>
+
+<section class="pv" aria-label="About this preview">
+  <div class="wrap">
+    <div class="pv-card rv">
+      <span class="badge">Preview</span>
+      <div>
+        <h3>A one-page preview of the McLeod Drilling website</h3>
+        <p>MP Launch put this together to show what the business could look like online. The finished website would be built out from here:</p>
+        <ul>
+          <li><svg><use href="#i-check"/></svg>A page for each drilling method</li>
+          <li><svg><use href="#i-check"/></svg>A bigger gallery of your rigs and jobs, using your own photos</li>
+          <li><svg><use href="#i-check"/></svg>A working enquiry form that sends straight to your inbox</li>
+          <li><svg><use href="#i-check"/></svg>Your Google Business Profile filled out with photos and linked to the new website</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="ftr">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="McLeod Drilling"><svg viewBox="0 0 190 128"><use href="#mcl-logo"/></svg></a>
+    <p>&copy; 2026 McLeod Drilling &middot; Port Augusta, South Australia</p>
+    <p>Website by <a href="https://mplaunch.com.au" rel="noopener">MP Launch</a></p>
+  </div>
+</footer>
+
+<a class="ribbon" href="https://mplaunch.com.au" rel="noopener">Design concept &middot; MP Launch</a>
+
+<script>
+(function(){
+  var f=document.getElementById('enq'),n=document.getElementById('enq-note');
+  if(f)f.addEventListener('submit',function(e){e.preventDefault();n.style.display='block';});
+  var els=document.querySelectorAll('.rv');
+  if(!('IntersectionObserver' in window)){els.forEach(function(el){el.classList.add('in');});return;}
+  var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{rootMargin:'0px 0px -8% 0px'});
+  els.forEach(function(el){io.observe(el);});
+  setTimeout(function(){els.forEach(function(el){el.classList.add('in');});},2500);
+})();
+</script>
+<script>
+(function(){try{
+  if(navigator.webdriver)return;                     /* skip automation / QA */
+  var v=new URLSearchParams(location.search).get('v');
+  if(!v)return;                                      /* GATE 1: not armed = silent, forever */
+  var slug="mcleod-drilling-preview", label="", phone=""; /* who it is lives in lib/preview-contacts.ts, never here */
+  var k="mpl_seen_"+slug, last=+localStorage.getItem(k)||0;
+  if(Date.now()-last<432e5)return;                   /* once per 12h per browser */
+  var fired=false,dwell=0,t=null;
+  function live(){return document.visibilityState==="visible";}   /* GATE 2 */
+  function send(how){
+    if(fired||!live())return; fired=true; if(t)clearInterval(t);
+    localStorage.setItem(k,String(Date.now()));
+    new Image().src="https://mplaunch.com.au/api/preview-view?slug="+encodeURIComponent(slug)
+      +"&label="+encodeURIComponent(label)+"&phone="+encodeURIComponent(phone)
+      +"&src="+encodeURIComponent(v)+"&via="+how+"&t="+Date.now();
+  }
+  function start(){                                  /* GATE 3: 5s visible, or a real interaction */
+    t=setInterval(function(){if(!live())return; dwell+=500; if(dwell>=5000)send("dwell");},500);
+    ["pointerdown","scroll","keydown"].forEach(function(e){
+      addEventListener(e,function(){send("interaction");},{once:true,passive:true});});
+  }
+  if(document.prerendering){document.addEventListener("prerenderingchange",start,{once:true});}
+  else{start();}
+}catch(e){}})();
+</script>
+</body>
+</html>
