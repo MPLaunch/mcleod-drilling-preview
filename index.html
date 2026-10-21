@@ -11,6 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,500;0,600;0,700;0,800;0,900;1,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preload" as="image" href="assets/hero.jpg">
+<script>/* preview ends after 14 days: end of Wed 4 Nov 2026, Adelaide time */try{if(Date.now()>Date.parse("2026-11-04T13:29:59Z"))document.documentElement.className+=" expired"}catch(e){}</script>
 <style>
 :root{
   --red:#F4502F; --red-deep:#D63E1F; --ink:#1B1513; --ink-2:#2A1D1A; --ink-3:#3A2A25;
@@ -189,6 +190,12 @@ form.card .btn{width:100%;justify-content:center;margin-top:6px}
 /* reveal */
 .rv{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
 .rv.in{opacity:1;transform:none}
+/* preview ended */
+.ended{display:none;padding:120px 0 140px;background:var(--sand)}
+.ended .card{max-width:620px;margin:0 auto;background:var(--white);border:1px solid var(--line);border-radius:22px;padding:44px 38px;text-align:center;box-shadow:0 30px 60px -40px rgba(60,30,15,.35)}
+.ended h1{font-size:clamp(28px,4vw,40px);font-weight:800;margin:14px 0 16px}
+.ended p{color:var(--muted);margin-bottom:26px}
+.expired main{display:none}.expired .ended{display:block}.expired .nav a:not(.btn){display:none}
 @media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
 
 /* responsive */
@@ -507,6 +514,8 @@ form.card .btn{width:100%;justify-content:center;margin-top:6px}
 </section>
 
 </main>
+
+<section class="ended" aria-label="Preview ended"><div class="wrap"><div class="card"><div class="eyebrow">Website preview</div><h1>This preview has ended</h1><p>The McLeod Drilling website preview was up for 14 days. To see it again, or to talk about building the full website, call Peter at MP Launch.</p><a class="btn btn-red" href="tel:0421856850"><svg><use href="#i-phone"/></svg>Call Peter on 0421 856 850</a></div></div></section>
 
 <footer class="ftr">
   <div class="wrap">
